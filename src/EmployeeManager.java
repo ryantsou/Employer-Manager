@@ -10,7 +10,7 @@ import java.awt.Toolkit;
 import javax.swing.event.ListSelectionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.BorderFactory;
+// import javax.swing.BorderFactory;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.ImageIcon;
@@ -31,9 +31,9 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
-import javax.swing.UIManager;
+// import javax.swing.SwingUtilities;
+// import javax.swing.Timer;
+// import javax.swing.UIManager;
 import javax.swing.table.DefaultTableModel;
 
 public class EmployeeManager extends JFrame {
@@ -64,7 +64,7 @@ public class EmployeeManager extends JFrame {
 	private JButton delete = new JButton("Supprimer");
 	private JButton clean = new JButton("Initialiser");
 	private JButton close = new JButton("Fermer");
-	private JButton upload = new JButton("Ajouter une image");
+	// private JButton upload = new JButton("Ajouter une image");
 
 	// A décrire !!!
 	private JLabel empIDtxt = new JLabel("EmployeeID : ");
@@ -665,9 +665,9 @@ public class EmployeeManager extends JFrame {
 	}
 
 	private void initComponent() {
-		Color mid = new Color(230, 230, 230);
+		// Color mid = new Color(230, 230, 230);
 		Color high = new Color(255, 255, 255);
-		Color low = new Color(200, 200, 200);
+		// Color low = new Color(200, 200, 200);
 
 		imagePane.add(image);
 		image.setSize(new Dimension(200, 200));
