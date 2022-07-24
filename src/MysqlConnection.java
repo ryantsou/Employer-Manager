@@ -6,8 +6,6 @@ import javax.swing.JOptionPane;
 public class MysqlConnection {
 
 	public static Connection mysqlDbConnection (String user, String pwd)  {
-		user = "root";
-		pwd = "root";
 		try {
 			// Class.forName("com.mysql.jdbc.Driver");	//	MYSQL server
 			Class.forName("org.mariadb.jdbc.Driver");	//	MARIADB server

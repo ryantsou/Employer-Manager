@@ -669,6 +669,7 @@ public class EmployeeManager extends JFrame {
 		// Color mid = new Color(230, 230, 230);
 		Color high = new Color(255, 255, 255);
 		// Color low = new Color(200, 200, 200);
+		System.out.println(this.getWidth());
 
 		imagePane.add(image);
 		image.setSize(new Dimension(200, 200));
