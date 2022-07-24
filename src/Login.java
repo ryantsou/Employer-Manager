@@ -131,25 +131,6 @@ public class Login extends JFrame {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		try {
-			for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-				if ("Nimbus".equals(info.getName())) {
-					UIManager.setLookAndFeel(info.getClassName());
-					break;
-				}
-			}
-		} catch (Exception ex) {
-			JOptionPane.showMessageDialog(null, ex.getMessage());
-		} 
-		java.awt.EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				new Login().setVisible(true);
-			}
-		});
-
-	}
 	
 	private void initComponents() {
 
