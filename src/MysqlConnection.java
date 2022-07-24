@@ -7,9 +7,9 @@ public class MysqlConnection {
 
 	public static Connection mysqlDbConnection (String user, String pwd)  {
 		user = "root";
-		pwd = "";
+		pwd = "root";
 		try {
-			Class.forName("com.mysql.jdbc.Driver"); 
+			// Class.forName("com.mysql.jdbc.Driver"); 
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/empdb", user, pwd);
 			System.out.println("Connected to MySQL database");
 			return conn;
