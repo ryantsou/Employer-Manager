@@ -1,8 +1,6 @@
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import java.awt.EventQueue;
-import java.awt.Dimension;
-import java.awt.Toolkit;
 
 public class Main {
     public static void main (String[] args) {
