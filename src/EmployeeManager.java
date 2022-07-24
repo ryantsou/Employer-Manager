@@ -31,6 +31,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 import javax.swing.JTextField;
+import javax.swing.WindowConstants;
 // import javax.swing.SwingUtilities;
 // import javax.swing.Timer;
 // import javax.swing.UIManager;
@@ -690,7 +691,7 @@ public class EmployeeManager extends JFrame {
 		datePane.add(daytxt);
 		datePane.add(day);
 
-		setDefaultCloseOperation(this.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setContentPane(mainPane);
 		tablePane.setBackground(mainPane.getBackground());
 		fieldPane.setBackground(mainPane.getBackground());
