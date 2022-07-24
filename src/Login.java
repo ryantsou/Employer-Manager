@@ -144,9 +144,9 @@ public class Login extends JFrame {
 		jLabel4 = new javax.swing.JLabel();
 		jProgressBar1 = new javax.swing.JProgressBar();
 		jLabel3 = new javax.swing.JLabel();
-
+		
 		setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-		setResizable(false);
+		setResizable(true);
 		addWindowListener(new java.awt.event.WindowAdapter() {
 			public void windowOpened(java.awt.event.WindowEvent evt) {
 				formWindowOpened(evt);
@@ -197,7 +197,7 @@ public class Login extends JFrame {
 			}
 		});
 
-		jLabel4.setForeground(Color.blue);
+		jLabel4.setForeground(Color.MAGENTA);
 		jLabel4.setText("NOTE   :   Accès non autorisé n'est permis !!!");
 
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -272,12 +272,14 @@ public class Login extends JFrame {
 
 		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
 		getContentPane().setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(
+		layout.setHorizontalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER).addComponent(
+				jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
+				javax.swing.GroupLayout.PREFERRED_SIZE));
+		layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER).addComponent(
 				jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
 				javax.swing.GroupLayout.PREFERRED_SIZE));
-		layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE,
-				javax.swing.GroupLayout.PREFERRED_SIZE));
+
+		// getContentPane().add(jPanel2);
 
 		pack();
 		this.setLocationRelativeTo(null);

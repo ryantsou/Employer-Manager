@@ -1,6 +1,8 @@
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import java.awt.EventQueue;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 public class Main {
     public static void main (String[] args) {
@@ -16,7 +18,11 @@ public class Main {
         }
 
         EventQueue.invokeLater(new Runnable() {
-            public void run() { new Login().setVisible(true); }   
+            public void run() { 
+                Login login = new Login();
+                login.setVisible(true);
+                login.setLocationRelativeTo(null);
+            }   
         });
     }
 }

@@ -661,18 +661,15 @@ public class EmployeeManager extends JFrame {
 
 		table.setDragEnabled(false);
 		table.setGridColor(Color.black);
-		// table.set
 
 	}
 
 	private void initComponent() {
-		// Color mid = new Color(230, 230, 230);
 		Color high = new Color(255, 255, 255);
-		// Color low = new Color(200, 200, 200);
-		System.out.println(this.getWidth());
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 
 		imagePane.add(image);
-		image.setSize(new Dimension(200, 200));
+		image.setSize(new Dimension(screenSize.width , screenSize.height));
 		mainPane.setBackground(high);
 		tablePane.setBackground(mainPane.getBackground());
 		imagePane.setBackground(mainPane.getBackground());
